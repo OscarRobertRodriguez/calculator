@@ -1,0 +1,109 @@
+ul, ol {
+    list-style:none;
+}
+
+ul li {
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    background-color:#CDCDCF;
+ }
+
+section {
+    position: relative;
+    top: 50px;
+    right: 20px;
+    width: 400px;
+    margin: 0 auto;
+
+
+}
+
+
+
+ .outputScreen li {
+     height: 80px;
+     width: 315px;
+ }
+
+ .wider {
+     display: inline-block;
+     width: 138px;
+
+
+ }
+
+ .enter {
+     position: absolute;
+     right: 11px;
+     bottom: -1px;
+     height: 135px;
+
+
+ }
+
+ .calcNum {
+     position:relative;
+     top: 16px;
+     font-size: 16px;
+ }
+
+ .dot {
+     font-weight: bold;
+ }
+
+.enterDown {
+     position:relative;
+     top: 118px;
+     font-size: 20px;
+     left: 5px;
+ }
+
+ .screen {
+     position: relative;
+     top: 30px;
+     left: 80px;
+     font-size: 40px;
+     text-align:none;
+     background-color:none;
+ }
+
+
+
+li:active {
+    background-color:#EAEAEC;
+}
+
+ .outputScreen li:active {
+    background-color:#CDCDCF;
+}
+
+h1 {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 5em;
+    margin-top: 30px;
+    text-align:center;
+    font-family: 'Merriweather', serif;
+
+}
+
+footer {
+    text-align:center;
+   margin-top: 120px;
+   width: 100%;
+
+
+}
+
+hr {
+   border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+
+}
+
