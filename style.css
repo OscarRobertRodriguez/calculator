@@ -18,7 +18,7 @@
 
 
 
-
+body {height: auto}
 
 
 
@@ -111,6 +111,11 @@ color: #fff;
     font: bold 14px Arial, sans-serif;
 }
 
+.wrapper {
+    position: relative;
+    height: 100%;
+}
+
 html {
     background: #fff;
     background: radial-gradient(circle,#fff 20%, #ccc);
@@ -137,9 +142,9 @@ html {
     margin: 0 7px 11px 0;
     background: #fff;
     border-radius: 3px;
-
+    cursor: pointer;
     /*typography*/
-
+    user-select: none;
     color: #888;
     line-height: 36px;
     text-align: center;
@@ -230,19 +235,23 @@ html {
 
 
 
- footer {
-     margin: 0 auto;
-     width: 23em;
- }
 
- footer > small {
-     font-size: 12px;
-     font-variant: small-caps;
-     margin-left: 2em;
-     color: #888;
- }
+footer {
+    width:100%;
+    height:20px;
+    position:absolute;
+    bottom:0;
+    left:0;
 
+}
 
+footer > p {
+    margin: 0 auto;
+    width: 23em;
+    color: #888;
+    font-size: small;
+    font-variant: small-caps;
+}
 
 
 
