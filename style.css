@@ -122,7 +122,7 @@ html {
 }
 
 .calculator {
-    width: 325px;
+    width: 398px;
     height: auto;
     margin: 200px auto;
     box-shadow: 1px 5px 26px 0px rgba(0,0,0,0.56);
@@ -130,11 +130,45 @@ html {
     padding: 20px;
 }
 
+
 .keys,.top {
    overflow: hidden;
 }
 
-.keys span, .top span.clear {
+.keys {
+    width: 350px;
+    margin:
+}
+
+.keys span, .top span.clear,.delete {
+    position: relative;
+    width: 82px;
+    height: 36px;
+    float:  left;
+    margin: 0 7px 11px 0;
+    background: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    /*typography*/
+    user-select: none;
+    color: #888;
+    line-height: 36px;
+    text-align: center;
+
+
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+
+    /*smooth transition*/
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+
+.delete, .top span.clear {
+
     position: relative;
     width: 66px;
     height: 36px;
@@ -164,8 +198,9 @@ html {
 
 .top .screen {
     float: right;
-    width: 212px;
+    width: 200px;
     height: 40px;
+    margin-right: 10px;
     background: rgba(0,0,0,0.2);
     box-shadow: inset 0px 4px rgba(0,0,0,0.2);
 
@@ -188,7 +223,7 @@ html {
     color:#fff;
 }
 
-.top span.clear {
+.top span.clear,.delete {
     background: #ff8566;
     color: #fff;
 }
@@ -206,7 +241,7 @@ html {
     color:#fff;
 }
 
-.top span.clear:hover {
+.top span.clear:hover ,.delete:hover {
     background: #ff9999;
     color: #fff;
 }
@@ -224,7 +259,7 @@ html {
     top: 4px;
 }
 
-.top span.clear:active {
+.top span.clear:active,.delete:active {
     background: #ff8566;
     box-shadow: 0 0 rgba(0,0,0,0.2);
     color: #fff;
@@ -239,6 +274,7 @@ html {
 footer {
     width:100%;
     height:20px;
+    margin: 0 auto;
     position:absolute;
     bottom:0;
     left:0;
@@ -247,6 +283,7 @@ footer {
 
 footer > p {
     margin: 0 auto;
+    text-align: center;
     width: 23em;
     color: #888;
     font-size: small;
